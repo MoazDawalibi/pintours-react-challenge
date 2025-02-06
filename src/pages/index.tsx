@@ -28,7 +28,7 @@ const index = () => {
 
   useInfiniteScroll(fetchNextPage, hasNextPage);
 
-  if (isLoading) return <SpinContainer/>;
+  if (isLoading) return <div className="loading_home"><SpinContainer/></div>;
 
   return (
     <div className="home-page">

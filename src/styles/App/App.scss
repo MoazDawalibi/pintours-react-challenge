@@ -36,3 +36,9 @@ svg {
   cursor: pointer;
 }
 
+
+.loading_home{
+  width: 100%;
+  height: 50vh;
+  @include Flex;
+}
