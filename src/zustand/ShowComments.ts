@@ -7,5 +7,5 @@ interface ModalState {
 
 export const useShowComments = create<ModalState>((set) => ({
   showComments: true,
-  setShowComments: (value: boolean) => set((state) => ({ showComments: value })),
+  setShowComments: (value: boolean) => set(() => ({ showComments: value })), 
 }));
