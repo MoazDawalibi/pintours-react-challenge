@@ -1,0 +1,50 @@
+.home-page{
+    @include Flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.image-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+
+    .image-card{
+        display: flex;
+        width: 160px;
+        height: 220px;
+        flex-direction: column;
+        padding: 20px 10px;
+        @include Shadow;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: .4s;
+        overflow: hidden;
+        gap: 20px;
+
+        &:hover{
+            scale: 1.1;
+        }
+
+        img{
+            height: 90%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        p{
+            text-align: center;
+            font-size: 8px;
+            display: none;
+        }
+
+        &:hover{
+            p{
+                display: block;
+            }
+        }
+    }
+}

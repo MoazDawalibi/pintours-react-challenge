@@ -1,0 +1,23 @@
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: var(--navBarHeight);
+  z-index: 4;
+  padding-inline: var(--layoutPadding);
+  background: var(--primary);
+
+  .ant-input-affix-wrapper{
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .NavBar{
+    .ant-input-affix-wrapper{
+      width: 50% !important;
+    }
+  }
+}

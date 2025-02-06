@@ -1,0 +1,64 @@
+.modal {
+  width: 100%;
+  border-radius: var(--border-radius);
+
+  header, .share-icons, .image-container, .body, .not-found-data {
+    width: 98%;
+    display: flex;
+    margin-inline: auto;
+  }
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image-container {
+    justify-content: center;
+    margin-block: 15px;
+    
+    .filckr-image {
+      max-height: 450px;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer; 
+    }
+  }
+
+  .share-icons {
+    svg {
+      font-size: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+
+  .body {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin-block: 10px;
+
+    p {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+
+      span {
+        margin-left: 10px;
+        padding-block: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  header svg, .share-icons svg {
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+.ant-modal .ant-modal-close {
+  display: none !important;
+}
